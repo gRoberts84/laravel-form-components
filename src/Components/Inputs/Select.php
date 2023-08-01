@@ -94,7 +94,7 @@ class Select extends Input
         return collect($options)
             ->map(function ($value, $key) {
                 // If the key is not numeric, we're going to assume this is the value.
-                if (! is_numeric($key)) {
+                if (! is_numeric(value)) {
                     return [
                         $this->valueField => $key,
                         $this->labelField => $value,
